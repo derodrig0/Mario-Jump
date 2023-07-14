@@ -2,6 +2,7 @@ const mario = document.querySelector(".mario");
 const pipe = document.querySelector(".pipe");
 const clouds = document.querySelector(".clouds");
 const imgGameOver = document.querySelector(".imgGameOver");
+const btnIniciar = document.querySelector(".btnIniciar");
 
 const jump = () => {
   mario.classList.add("jump");
@@ -32,9 +33,15 @@ const loop = setInterval(() => {
     mario.style.marginLeft = "50px";
 
     imgGameOver.style.display = "block";
+    btnIniciar.style.display = "block";
 
     clearInterval(loop);
   }
 }, 10);
 
+const startAnimation = () => {
+  location.reload();
+};
+
+btnIniciar.addEventListener("click", startAnimation);
 document.addEventListener("keydown", jump);
