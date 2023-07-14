@@ -45,3 +45,4 @@ const startAnimation = () => {
 
 btnIniciar.addEventListener("click", startAnimation);
 document.addEventListener("keydown", jump);
+document.addEventListener("touchstart", jump);

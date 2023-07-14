@@ -103,3 +103,69 @@
   opacity: 85%;
   cursor: pointer;
 }
+
+/* Responsividade para telas pequenas */
+@media (max-width: 576px) {
+  .pipe {
+    width: 40px;
+    height: 56px;
+  }
+
+  .mario {
+    width: 100px;
+  }
+
+  .clouds {
+    width: 300px;
+  }
+
+  .divGameOver .btnIniciar {
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+  }
+}
+
+/* Responsividade para telas médias */
+@media (min-width: 577px) and (max-width: 992px) {
+  .pipe {
+    width: 60px;
+    height: 84px;
+  }
+
+  .mario {
+    width: 120px;
+  }
+
+  .clouds {
+    width: 400px;
+  }
+
+  .divGameOver .btnIniciar {
+    width: 180px;
+    height: 45px;
+    font-size: 18px;
+  }
+}
+
+/* Responsividade para telas grandes */
+@media (min-width: 993px) {
+  .pipe {
+    width: 80px;
+    height: 112px;
+  }
+
+  .mario {
+    width: 150px;
+  }
+
+  .clouds {
+    width: 550px;
+  }
+
+  .divGameOver .btnIniciar {
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+  }
+}
