@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  cursor: none;
 }
 
 .gameBoard {
@@ -62,7 +63,7 @@
 .clouds {
   position: absolute;
   width: 550px;
-  animation: cloudsAnimation 25s infinite linear;
+  animation: cloudsAnimation 10s infinite linear;
 }
 
 @keyframes cloudsAnimation {
@@ -74,9 +75,14 @@
   }
 }
 
-.gameover{
-  position: absolute;
-  right: 25%;
-  bottom: 40%;
+.divGameOver{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.imgGameOver{
   display: none;
+  z-index: 9999;
 }

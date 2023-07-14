@@ -1,7 +1,7 @@
 const mario = document.querySelector(".mario");
 const pipe = document.querySelector(".pipe");
 const clouds = document.querySelector(".clouds");
-const gameover = document.querySelector(".gameover");
+const imgGameOver = document.querySelector(".imgGameOver");
 
 const jump = () => {
   mario.classList.add("jump");
@@ -31,7 +31,7 @@ const loop = setInterval(() => {
     mario.style.width = "75px";
     mario.style.marginLeft = "50px";
 
-    gameover.style.display = "block";
+    imgGameOver.style.display = "block";
 
     clearInterval(loop);
   }
