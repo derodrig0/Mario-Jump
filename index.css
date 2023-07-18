@@ -14,6 +14,18 @@
   background: linear-gradient(#46beee, #e0f6ff);
 }
 
+.score {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+  color: rgb(28, 119, 10);
+  padding: 10px;
+  background: #bdd8e3;
+  border-radius: 10px;
+  box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.1);
+}
+
 .pipe {
   position: absolute;
   bottom: 0;
@@ -59,15 +71,22 @@
   }
 }
 
-.clouds {
+.clouds,
+.clouds-2 {
   position: absolute;
-  width: 550px;
-  animation: cloudsAnimation 10s infinite linear;
+  top: 70px;
+  width: 400px;
+  animation: cloudsAnimation 20s infinite linear;
+}
+
+.clouds-2 {
+  top: 210px;
+  animation: cloudsAnimation 15s infinite linear;
 }
 
 @keyframes cloudsAnimation {
   from {
-    right: -550px;
+    right: -400px;
   }
   to {
     right: 100%;
@@ -97,75 +116,10 @@
   font-weight: bold;
   font-size: 20px;
   display: none;
+  z-index: 9999;
 }
 
 .divGameOver .btnIniciar:hover {
   opacity: 85%;
   cursor: pointer;
-}
-
-/* Responsividade para telas pequenas */
-@media (max-width: 576px) {
-  .pipe {
-    width: 40px;
-    height: 56px;
-  }
-
-  .mario {
-    width: 100px;
-  }
-
-  .clouds {
-    width: 300px;
-  }
-
-  .divGameOver .btnIniciar {
-    width: 150px;
-    height: 40px;
-    font-size: 16px;
-  }
-}
-
-/* Responsividade para telas médias */
-@media (min-width: 577px) and (max-width: 992px) {
-  .pipe {
-    width: 60px;
-    height: 84px;
-  }
-
-  .mario {
-    width: 120px;
-  }
-
-  .clouds {
-    width: 400px;
-  }
-
-  .divGameOver .btnIniciar {
-    width: 180px;
-    height: 45px;
-    font-size: 18px;
-  }
-}
-
-/* Responsividade para telas grandes */
-@media (min-width: 993px) {
-  .pipe {
-    width: 80px;
-    height: 112px;
-  }
-
-  .mario {
-    width: 150px;
-  }
-
-  .clouds {
-    width: 550px;
-  }
-
-  .divGameOver .btnIniciar {
-    width: 200px;
-    height: 50px;
-    font-size: 20px;
-  }
 }
